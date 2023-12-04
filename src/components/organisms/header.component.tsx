@@ -1,4 +1,4 @@
-import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
+import { Box, Center, HStack, Link, Text, VStack } from "@chakra-ui/react";
 import SocialMediaIcons from "./socialMediaIcons.component";
 
 interface HeaderProps {
@@ -12,14 +12,20 @@ const Header: React.FC<HeaderProps> = ( HeaderProps ) => {
                 <Center>
                     <HStack spacing={10}>
                         <VStack spacing={1}>
-                            <Text fontSize='6xl' fontWeight='bold'>Jason Le</Text>
-                            <Text fontSize='2xl' fontWeight='bold'>Adelaide, South Australia</Text>
+                            <Text fontSize='6xl' fontWeight='bold' color='gray.600'>Jason Le</Text>
+                            <Text fontSize='2xl' fontWeight='bold' color='gray.600'>Adelaide, South Australia</Text>
                             <Box>
                                 <SocialMediaIcons/>
                             </Box>
                         </VStack>
                     </HStack>
                 </Center>
+                <HStack>
+                    <Link href='mailto:longle14231@gmail.com'>
+                        <Text fontSize='2xl' fontWeight='bold' color='gray.400'>About</Text>
+                    </Link>
+                
+                </HStack>
             </Box>
         </>
     );
