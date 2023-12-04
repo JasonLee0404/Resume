@@ -8,8 +8,8 @@ const MainContent: React.FC<MainContentProps> = ( MainContentProps ) => {
 
     return (
         <>
-            <Box bg='white' w='100%' backgroundColor='gray.200' padding='2'>
- 
+            <Box bg='white' w='100%' backgroundColor='gray.50' padding='2'>
+                Hello World
             </Box>
         </>
     );
