@@ -1,8 +1,9 @@
-import { Box, Center, HStack, Link, Spacer, Switch, Text, VStack } from "@chakra-ui/react";
+import { Box, Center, HStack, Text, VStack } from "@chakra-ui/react";
 import SocialMediaIcons from "./socialMediaIcons.component";
-import { Route, Link as WouterLink } from "wouter";
+import { Route, Link, Switch } from "wouter";
 import LandingPage from "../pages/landingPage.component";
 import AboutPage from "../pages/aboutPage.component";
+import IndustryPage from "../pages/industriesPage.component";
 
 interface HeaderProps {
 }
@@ -27,25 +28,32 @@ const Header: React.FC<HeaderProps> = ( HeaderProps ) => {
 
                     <Center>
                         <HStack spacing='10rem'>
-                            <Link href='mailto:longle14231@gmail.com'>
+                            <Switch>
+                                <Route path='/about' component={() => <AboutPage/>}/>
+                                {/* <Route path='/technologies' component={() => <TechnologyPage/>}/>
+                                <Route path='/projects' component={() => <ProjectPage/>}/> */}
+                                <Route path='/industries' component={() => <IndustryPage/>}/>
+                                {/* <Route path='/interests' component={() => <InterestPage/>}/> */}
+                            </Switch>
+                            <Link to='/about'>
                                 <Text fontSize='2xl' fontWeight='bold' color='gray.400'>About</Text>
                             </Link>
 
-                            <Link href='mailto:longle14231@gmail.com'>
+                            {/* <Link to='/technologies'>
                                 <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Technologies</Text>
-                            </Link>
+                            </Link> */}
 
-                            <Link href='mailto:longle14231@gmail.com'>
+                            {/* <Link to='/projects'>
                                 <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Projects</Text>
-                            </Link>
+                            </Link> */}
 
-                            <Link href='mailto:longle14231@gmail.com'>
+                            <Link to='/industries'>
                                 <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Industries</Text>
                             </Link>
 
-                            <Link href='mailto:longle14231@gmail.com'>
+                            {/* <Link to='/interests'>
                                 <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Interests</Text>
-                            </Link>
+                            </Link>  */}
                         </HStack>
                     </Center>
                 </VStack>

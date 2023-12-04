@@ -3,10 +3,10 @@ import Header from "../organisms/header.component";
 import MainContent from "../organisms/mainContent.component";
 
 
-interface LandingPageProps {
+interface IndustryPageProps {
 }
 
-const LandingPage: React.FC<LandingPageProps> = ( LandingPageProps ) => {
+const IndustryPage: React.FC<IndustryPageProps> = ( IndustryPageProps ) => {
 
     return (
         <>
@@ -17,4 +17,4 @@ const LandingPage: React.FC<LandingPageProps> = ( LandingPageProps ) => {
     );
 }
 
-export default LandingPage;
+export default IndustryPage;

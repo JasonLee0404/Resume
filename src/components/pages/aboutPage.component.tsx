@@ -10,9 +10,10 @@ const AboutPage: React.FC<AboutPageProps> = ( AboutPageProps ) => {
 
     return (
         <>
-            <Header/>
+            This is about Page
+            {/* <Header/>
             <MainContent/>
-            <Footer/>
+            <Footer/> */}
         </>
     );
 }
