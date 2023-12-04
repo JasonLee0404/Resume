@@ -3,18 +3,18 @@ import Header from "../organisms/header.component";
 import MainContent from "../organisms/mainContent.component";
 
 
-interface LandingPageProps {
+interface TechnologyPageProps {
 }
 
-const LandingPage: React.FC<LandingPageProps> = ( LandingPageProps ) => {
+const TechnologyPage: React.FC<TechnologyPageProps> = ( TechnologyPageProps ) => {
 
     return (
         <>
             <Header/>
-            <MainContent/>
+            <MainContent tabName='Technology Page'/>
             <Footer/>
         </>
     );
 }
 
-export default LandingPage;
+export default TechnologyPage;

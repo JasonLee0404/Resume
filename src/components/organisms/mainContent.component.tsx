@@ -1,15 +1,15 @@
-import { Box, Center, HStack, Text } from "@chakra-ui/react";
-import SocialMediaIcons from "./socialMediaIcons.component";
+import { Box } from "@chakra-ui/react";
 
 interface MainContentProps {
+    tabName?: string
 }
 
-const MainContent: React.FC<MainContentProps> = ( MainContentProps ) => {
+const MainContent: React.FC<MainContentProps> = ( { tabName} ) => {
 
     return (
         <>
             <Box flex='1' bg='white' w='100%' backgroundColor='gray.50' padding='2'>
-                Hello World
+                This is main content page for {tabName}
             </Box>
         </>
     );

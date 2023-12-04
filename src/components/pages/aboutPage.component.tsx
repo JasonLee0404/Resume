@@ -10,10 +10,9 @@ const AboutPage: React.FC<AboutPageProps> = ( AboutPageProps ) => {
 
     return (
         <>
-            This is about Page
-            {/* <Header/>
-            <MainContent/>
-            <Footer/> */}
+            <Header/>
+            <MainContent tabName={'About Page'}/>
+            <Footer/>
         </>
     );
 }

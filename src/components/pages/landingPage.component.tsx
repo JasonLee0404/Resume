@@ -11,7 +11,7 @@ const LandingPage: React.FC<LandingPageProps> = ( LandingPageProps ) => {
     return (
         <>
             <Header/>
-            <MainContent/>
+            <MainContent tabName='Main Page'/>
             <Footer/>
         </>
     );

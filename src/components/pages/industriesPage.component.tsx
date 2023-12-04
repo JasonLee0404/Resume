@@ -11,7 +11,7 @@ const IndustryPage: React.FC<IndustryPageProps> = ( IndustryPageProps ) => {
     return (
         <>
             <Header/>
-            <MainContent/>
+            <MainContent tabName='Industry Page'/>
             <Footer/>
         </>
     );

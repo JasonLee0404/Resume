@@ -3,18 +3,18 @@ import Header from "../organisms/header.component";
 import MainContent from "../organisms/mainContent.component";
 
 
-interface LandingPageProps {
+interface ProjectPageProps {
 }
 
-const LandingPage: React.FC<LandingPageProps> = ( LandingPageProps ) => {
+const ProjectPage: React.FC<ProjectPageProps> = ( ProjectPageProps ) => {
 
     return (
         <>
             <Header/>
-            <MainContent/>
+            <MainContent tabName='Project Page'/>
             <Footer/>
         </>
     );
 }
 
-export default LandingPage;
+export default ProjectPage;
