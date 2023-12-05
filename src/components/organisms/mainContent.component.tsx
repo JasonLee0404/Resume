@@ -1,5 +1,5 @@
-import { Box, Card, CardBody, Text, Image, List, ListItem } from "@chakra-ui/react";
-import { content } from "../../content/content";
+import { Box, Card, CardBody, Text, Image, List, ListItem, VStack, HStack, Divider } from "@chakra-ui/react";
+import { content, projects } from "../../content/content";
 import aboutMe from "../../assets/aboutMe.jpg"
 
 interface MainContentProps {
@@ -47,7 +47,46 @@ const MainContent: React.FC<MainContentProps> = ( { tabName} ) => {
     } else if (tabName === 'Project Page') {
         mainContent = 
         <>
-            BBB
+            <VStack align='left' ml='5rem'>
+                <Text as='b' fontSize='2xl'>{projects.project1.name}</Text>
+                <HStack>
+                    <Text as='b'>Technologies: </Text>
+                    {projects.project1.technologies.map((item, index) => (
+                        <Text>{item}</Text>
+                    ))}
+                </HStack>
+
+                <Divider/>
+
+                <Text as='b' fontSize='2xl'>{projects.project2.name}</Text>
+                <HStack>
+                    <Text as='b'>Technologies: </Text>
+                    {projects.project2.technologies.map((item, index) => (
+                        <Text>{item}</Text>
+                    ))}
+                </HStack>
+
+                <Divider/>
+
+                <Text as='b' fontSize='2xl'>{projects.project3.name}</Text>
+                <HStack>
+                    <Text as='b'>Technologies: </Text>
+                    {projects.project3.technologies.map((item, index) => (
+                        <Text>{item}</Text>
+                    ))}
+                </HStack>
+
+                <Divider/>
+
+                <Text as='b' fontSize='2xl'>{projects.project4.name}</Text>
+                <HStack>
+                    <Text as='b'>Technologies: </Text>
+                    {projects.project3.technologies.map((item, index) => (
+                        <Text>{item}</Text>
+                    ))}
+                </HStack>
+
+            </VStack>
         </>
     } else if (tabName === 'Technology Page') {
 

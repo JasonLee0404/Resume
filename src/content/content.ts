@@ -28,3 +28,53 @@ export const content = {
         ]
     }
 }
+
+export const projects = {
+    project1: {
+        name: 'Grain Trading Stock Price Determination',
+        technologies: [
+            'C++',
+            'XML',
+            'Lua',
+            'MySQL',
+            'wxWidgets',
+            'Git'
+        ],
+        context: 'This was context'
+    },
+    project2: {
+        name: 'Attention Adjust - Marketing Campaign Budget Portfolio Platform',
+        technologies: [
+            'Typescript',
+            'JavaScript',
+            'C#/.NET',
+            'PostgreSQL',
+            'Tailwind CSS',
+            'Nest.js',
+            'AWS'
+        ]
+    },
+    project3: {
+        name: 'Pernod Ricard Wine Manufacturing Optimisation',
+        technologies: [
+            'Java',
+            'SpringBoot',
+            'React',
+            'PostgreSQL',
+        ]
+    },
+    project4: {
+        name: 'The Trade Desk Ads Selling Platform Integration',
+        technologies: [
+            'Typescript',
+            'Python',
+            'PostgreSQL',
+            'MongoDB'
+        ]
+    }
+
+}
+
+export const interests = {
+
+}
