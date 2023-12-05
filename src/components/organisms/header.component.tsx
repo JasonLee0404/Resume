@@ -14,7 +14,17 @@ const Header: React.FC<HeaderProps> = ( HeaderProps ) => {
                     <Center>
                         <HStack spacing={10}>
                             <VStack spacing={1}>
-                                <Text fontSize='6xl' fontWeight='bold' color='gray.600'>Jason Le</Text>
+                                <Link to='/about'>
+                                    <Box
+                                        pl={4}
+                                        pr={4}
+                                        borderRadius='md'
+                                        bg='gray.200'
+                                        _hover={{ bg: 'gray.500'}}
+                                    >
+                                        <Text fontSize='6xl' fontWeight='bold' color='gray.600' _hover={{ color:'white'}}>Jason Le</Text>
+                                    </Box>     
+                                </Link>
                                 <Text fontSize='2xl' fontWeight='bold' color='gray.600'>Adelaide, South Australia</Text>
                                 <Box>
                                     <SocialMediaIcons/>
@@ -26,23 +36,63 @@ const Header: React.FC<HeaderProps> = ( HeaderProps ) => {
                     <Center>
                         <HStack spacing='10rem'>
                             <Link to='/about'>
-                                <Text fontSize='2xl' fontWeight='bold' color='gray.400'>About</Text>
+                                <Box
+                                    pl={4}
+                                    pr={4}
+                                    borderRadius='md'
+                                    bg='gray.200'
+                                    _hover={{ bg: 'gray.500'}}
+                                >
+                                    <Text fontSize='2xl' fontWeight='bold' color='gray.400' _hover={{ color:'white'}}>About</Text>
+                                </Box>     
                             </Link>
 
                             <Link to='/technologies'>
-                                <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Technologies</Text>
+                            <Box
+                                    pl={4}
+                                    pr={4}
+                                    borderRadius='md'
+                                    bg='gray.200'
+                                    _hover={{ bg: 'gray.500'}}
+                                >
+                                    <Text fontSize='2xl' fontWeight='bold' color='gray.400' _hover={{ color:'white'}}>Technologies</Text>
+                                </Box>
                             </Link>
 
                             <Link to='/projects'>
-                                <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Projects</Text>
+                            <Box
+                                    pl={4}
+                                    pr={4}
+                                    borderRadius='md'
+                                    bg='gray.200'
+                                    _hover={{ bg: 'gray.500'}}
+                                >
+                                    <Text fontSize='2xl' fontWeight='bold' color='gray.400' _hover={{ color:'white'}}>Projects</Text>
+                                </Box>
                             </Link>
 
                             <Link to='/industries'>
-                                <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Industries</Text>
+                            <Box
+                                    pl={4}
+                                    pr={4}
+                                    borderRadius='md'
+                                    bg='gray.200'
+                                    _hover={{ bg: 'gray.500'}}
+                                >
+                                    <Text fontSize='2xl' fontWeight='bold' color='gray.400' _hover={{ color:'white'}}>Industries</Text>
+                                </Box>
                             </Link>
 
                             <Link to='/interests'>
-                                <Text fontSize='2xl' fontWeight='bold' color='gray.400'>Interests</Text>
+                                <Box
+                                    pl={4}
+                                    pr={4}
+                                    borderRadius='md'
+                                    bg='gray.200'
+                                    _hover={{ bg: 'gray.500'}}
+                                >
+                                    <Text fontSize='2xl' fontWeight='bold' color='gray.400' _hover={{ color:'white'}}>Interests</Text>
+                                </Box>
                             </Link> 
                         </HStack>
                     </Center>
