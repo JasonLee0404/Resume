@@ -51,6 +51,8 @@ export const projects = {
             'PostgreSQL',
             'Tailwind CSS',
             'Nest.js',
+            'Jest',
+            'xUnit.net',
             'AWS'
         ]
     },
